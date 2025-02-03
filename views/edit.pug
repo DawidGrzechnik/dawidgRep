@@ -1,0 +1,47 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Beauty Salon
+  link(rel="stylesheet" href="/css/edit.css")
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+  link(rel='shortcut icon' href='/jpg/logo2.png')
+header.main-head
+  .container
+    .main-menu
+      .logo
+        img.logo_icon(src="/jpg/logo2.png")
+      .nav-menu
+        ul.nav-list
+          li.nav-list-item
+            a.nav-link(href='/') Strona główna
+          li.nav-list-item
+            a.nav-link(href='/') Edit
+          li.nav-list-item
+            a.nav-link(href='/cennik') Cennik
+          li.nav-list-item
+            a.nav-link(href='/portfolio') Portfolio
+          li.nav-list-item
+            a.nav-link(href='/login') Logowanie
+      .toggle-btn
+        button.btn
+          i.fa.fa-bars
+section.showcase
+  .overlay
+    form(action='/add' method='POST')
+      .row.form-group
+        .col-md-4
+          label(for='nameServices') Nazwa zabiegu
+          input#name(type='text' name='nameServices' value='' placeholder='Nazwa zabiegu' required='')
+        .col-md-4
+          label(for='cena') Cena
+          input#cena(type='text' name='cena' value='' placeholder='Cena' required='')
+        .col-md-4
+          button.btn.btn-primary(type='submit') Dodaj zabieg 
+    #target
+      
+script(src="/js/table.js")
+        
+
+  
+

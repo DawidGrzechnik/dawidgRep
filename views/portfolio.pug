@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Beauty Salon
+  link(rel="stylesheet" href="/css/main.css")
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+  link(rel='shortcut icon' href='/jpg/logo2.png')
+header.main-head
+  .container
+    .main-menu
+      .logo
+        img.logo_icon(src="/jpg/logo2.png")
+      .nav-menu
+        ul.nav-list
+          li.nav-list-item
+            a.nav-link(href='/') Strona główna
+          li.nav-list-item
+            a.nav-link(href="/cennik") Cennik
+          li.nav-list-item
+            a.nav-link(href='#') Portfolio
+          li.nav-list-item
+            a.nav-link(href='/logowanie') Logowanie
+      .toggle-btn
+        button.btn
+          i.fa.fa-bars
+section.showcase
+  .overlay
+  .container
+    .content
+      h2 Salon kosmetyczny
+      p
+        | Twoja Oaza spokoju w centrum Warszawy
+      a.btn(href='#') Czytaj więcej
+      //
+        <div class="copy-to-clipboard">
+        <div class="c-content">
+        <input type="text" class="text" value="https://gofund.me/f5f805f2">
+        <span class="c-title">Copy Link</span>
+        <span class="copied">Copied</span>
+        </div>
+        <button class="copy-btn">Copy</button>
+        </div>
+
+script(src="https://cdn.jsdelivr.net/npm/vue" type="text/javascript")
+script(src="/js/app.js")

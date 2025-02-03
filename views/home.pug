@@ -1,0 +1,72 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Beauty Salon
+  link(rel="stylesheet" href="/css/main.css")
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+  link(rel='shortcut icon' href='/jpg/logo2.png')
+header.main-head
+  .container
+    .main-menu
+      .logo
+        img.logo_icon(src="/jpg/logo2.png")
+      .nav-menu
+        ul.nav-list
+          li.nav-list-item
+            a.nav-link(href='/') Strona główna
+          li.nav-list-item
+            a.nav-link(href='/edit') Edit         
+          li.nav-list-item
+            a.nav-link(href='/cennik') Cennik
+          li.nav-list-item
+            a.nav-link(href='/portfolio') Portfolio
+          li.nav-list-item
+            a.nav-link(href='/login') Logowanie
+      .toggle-btn
+        button.btn
+          i.fa.fa-bars
+section.showcase
+  .overlay
+  .container
+    .content
+      h2 Salon kosmetyczny
+      p
+        | Twoja Oaza spokoju w centrum Warszawy
+      a.btn(href='#') Czytaj więcej
+      //
+        <div class="copy-to-clipboard">
+        <div class="c-content">
+        <input type="text" class="text" value="https://gofund.me/f5f805f2">
+        <span class="c-title">Copy Link</span>
+        <span class="copied">Copied</span>
+        </div>
+        <button class="copy-btn">Copy</button>
+        </div>
+.demo-text
+  .container
+    .content
+      h2 Zabiegi
+      p
+        | Profesjonalne salony kosmetyczne oferują wiele specjalistycznych zabiegów, służących podkreśleniu naturalnego piękna i odprężeniu. Wiele z nich ma jednak skomplikowane nazwy, co dla przeciętnej klientki może stanowić problem. Czy zdarzyło Ci się kiedyś, że nie wiedziałaś, na czym polega kuracja z oferty gabinetu, a głupio Ci było zapytać? Właśnie dlatego stworzyliśmy specjalny słowniczek kosmetyczny, który wyjaśni wszystkie problematyczne nazwy.
+    .img
+      img(src="/jpg/zabiegi.jpg")
+.demo-text
+  .container
+    .img
+      img(src="/jpg/manicure.jpg" alt='')
+    .content
+      h2 Manicure & pedicure
+      p
+        | Fryzjer, kosmetyczka, masaż, makijażystka, odpowiedni do okazji strój… Dbając o swój kompleksowy wygląd nie można zapomnieć o dłoniach. Zadbane dłonie i paznokcie to bowiem wizytówka każdej kobiety, a także mężczyzny. Salon Elegante zaprasza na profesjonalne zabiegi manicure…
+.demo-text
+  .container
+    .content
+      h2 Laseroteriapia
+      p
+        | Dysponujemy najnowocześniejszymi najnowocześniejszą i największą platformę laserową FOTONA SPECTRO SP, za pomocą którego mamy możliwość przeprowadzać liftingi twarzy, peelingi laserowe, lipozę, leczyć rumień, przebarwienia, trądzik, usuwać rozstępy i niechciane owłosienie. Możemy wykonać również laserowe powiększanie ust oraz wpłynąć na stymulację porostu włosów, równocześnie hamując ich wypadanie. Wszystkie zabiegi zazwyczaj są bezbolesne i nie obligują do długiego procesu rekonwalescencji.
+    .img
+      img(src="/jpg/laser.jpg" alt='')
+script(src="https://cdn.jsdelivr.net/npm/vue" type="text/javascript")
+script(src="/js/app.js")
